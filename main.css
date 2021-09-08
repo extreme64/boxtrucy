@@ -203,14 +203,17 @@
 
 .box-80 {
     width: 80%;
+    flex: 1 1 auto;
 }
 
 .box-70 {
     width: 70%;
+    flex: 1 1 auto;
 }
 
 .box-60 {
     width: 60%;
+    flex: 1 1 auto;
 }
 
 .box-50 {
@@ -220,6 +223,7 @@
 
 .box-40 {
     width: 40%;
+    flex: 1 1 auto;
 }
 
 .box-30 {
@@ -264,26 +268,32 @@
 
     .box-80--l {
         width: 80%;
+        flex: 1 1 auto;
     }
 
     .box-70--l {
         width: 70%;
+        flex: 1 1 auto;
     }
 
     .box-60--l {
         width: 60%;
+        flex: 1 1 auto;
     }
 
     .box-50--l {
         width: 50%;
+        flex: 1 1 auto;
     }
 
     .box-40--l {
         width: 40%;
+        flex: 1 1 auto;
     }
 
     .box-30--l {
         width: 30%;
+        flex: 1 1 auto;
     }
 
     .box-25--l {
@@ -293,6 +303,7 @@
 
     .box-20--l {
         width: 20%;
+        flex: 1 1 auto;
     }
 
 }
