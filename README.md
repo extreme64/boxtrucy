@@ -24,4 +24,4 @@ TODO:
 
 
 -------------------------------------------------------
-Working on this -> Some utils and desktom <> tablet <> mobile layout transformations
+Working on this -> Some utils and desktop <> tablet <> mobile layout transformations
