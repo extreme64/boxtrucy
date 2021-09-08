@@ -1,0 +1,48 @@
+/**
+    presentation-help.css
+
+    Used in example .html files to help with
+    content presentation and layout preview.
+ */
+
+body {
+    background-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(46, 50, 70);
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(46, 50, 70);
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-color: rgb(46, 50, 70);
+    border-right-style: none;
+    border-right-width: 0px;
+    border-top-color: rgb(46, 50, 70);
+    border-top-style: none;
+    border-top-width: 0px;
+    box-sizing: border-box;
+    display: block;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    margin: 0px;
+    padding: 0px;
+    transform: none;
+    vertical-align: baseline;
+}
+
+*[class*="box-"] {
+    position: relative;
+    min-height: 300px;
+    border: 1px solid red;
+}
+
+p {
+    padding: 10px;
+    background: lightgray;
+}
