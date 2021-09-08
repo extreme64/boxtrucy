@@ -2,6 +2,7 @@
 
 A light front-end framework for creating mobile-first responsive layouts with a basic utility classes. 
 
+flexbox-utils
 Free and open-source CSS
 
 
