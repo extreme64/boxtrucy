@@ -1,0 +1,528 @@
+body {
+    background-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(46, 50, 70);
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(46, 50, 70);
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-color: rgb(46, 50, 70);
+    border-right-style: none;
+    border-right-width: 0px;
+    border-top-color: rgb(46, 50, 70);
+    border-top-style: none;
+    border-top-width: 0px;
+    box-sizing: border-box;
+    display: block;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    transform: none;
+    vertical-align: baseline;
+}
+
+/* !!! Just for test !!! */
+*[class*="box-"] {
+    position: relative;
+    min-height: 300px;
+    border: 1px solid red;
+}
+
+p {
+    padding: 10px;
+    background: lightgray;
+}
+
+/* !!! END Just for tests !!! */
+
+
+/* +++ RESPONSIVE +++ */
+
+
+/** between content sections */
+
+/* >> all margins */
+.margin-100 {
+    margin: 100px;
+}
+
+.margin-75 {
+    margin: 75px;
+}
+
+.margin-50 {
+    margin: 50px;
+}
+
+.margin-25 {
+    margin: 25px;
+}
+
+/* >> individual margins */
+.margin-100--v {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.margin-75--v {
+    margin-top: 75px;
+    margin-bottom: 100px;
+}
+
+.margin-50--v {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.margin-25--v {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+.margin-100--h {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.margin-75--h {
+    margin-left: 75px;
+    margin-right: 100px;
+}
+
+.margin-50--h {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.margin-25--h {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
+.margin-100--top {
+    margin-top: 100px;
+}
+
+.margin-100--left {
+    margin-left: 100px;
+}
+
+.margin-100--right {
+    margin-right: 100px;
+}
+
+.margin-100--bottom {
+    margin-bottom: 100px;
+}
+
+.margin-75--top {
+    margin-top: 75px;
+}
+
+.margin-75--left {
+    margin-left: 75px;
+}
+
+.margin-75--right {
+    margin-right: 75px;
+}
+
+.margin-75--bottom {
+    margin-bottom: 75px;
+}
+
+/* >> padding */
+.padding-50 {
+    padding: 50px;
+}
+
+.padding-30 {
+    padding: 30px;
+}
+
+.padding-20 {
+    padding: 20px;
+}
+
+.padding-15 {
+    padding: 15px;
+}
+
+/* END between content sections */
+
+
+/* +++ Layout +++ */
+*[class*="row"],
+*[class*="box-"] {
+    box-sizing: border-box;
+}
+
+/* *, *::before, *::after {
+  box-sizing: border-box;
+} */
+
+
+/* full width wrap element */
+.box-container-full {
+    display: block;
+    width: initial;
+    position: relative;
+    margin: 0px auto;
+}
+
+/* wrap element with size that is
+ * like the main container in the theme [1200px] */
+.box-container {
+    max-width: 1200px;
+    display: block;
+    width: initial;
+    margin: 0px auto;
+    flex-direction: column;
+}
+
+/** colls wrap */
+/* row */
+
+.box-row--m,
+.box-row--s,
+.box-row {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* row with no width limit */
+.box-row-full {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* +++ END Layout +++ */
+
+
+/* +++ Columns +++ */
+.box-100 {
+    width: 100%;
+}
+
+.box-80 {
+    width: 80%;
+}
+
+.box-70 {
+    width: 70%;
+}
+
+.box-60 {
+    width: 60%;
+}
+
+.box-50 {
+    width: 50%;
+    flex: 1 1 auto;
+}
+
+.box-40 {
+    width: 40%;
+}
+
+.box-30 {
+    width: 30%;
+    flex: 1 1 auto;
+}
+
+.box-25 {
+    width: 25%;
+    flex: 1 1 auto;
+}
+
+.box-20 {
+    width: 20%;
+    flex: 1 1 auto;
+}
+
+
+@media screen and (max-width: 1200px) {
+    /* and (min-width: 1024px) */
+    /* hide elements */
+    .hide--l {
+        display: none;
+    }
+
+    /* --- */
+    /* rows */
+    .box-row--l {
+        max-width: 100%;
+        width: 100%;
+        display: block;
+    }
+
+    .box-row--l > div {
+        width: 100%;
+    }
+
+    /* --- */
+    .box-100--l {
+        width: 100%;
+    }
+
+    .box-80--l {
+        width: 80%;
+    }
+
+    .box-70--l {
+        width: 70%;
+    }
+
+    .box-60--l {
+        width: 60%;
+    }
+
+    .box-50--l {
+        width: 50%;
+    }
+
+    .box-40--l {
+        width: 40%;
+    }
+
+    .box-30--l {
+        width: 30%;
+    }
+
+    .box-25--l {
+        width: 25%;
+        flex: 1 1 auto;
+    }
+
+    .box-20--l {
+        width: 20%;
+    }
+
+}
+
+
+@media screen  and (max-width: 1023px) {
+    /* and (min-width: 768px) */
+    /* hide elements */
+    .hide--l,
+    .hide--m {
+        display: none;
+    }
+
+    /* --- */
+    /* rows */
+    .box-row--m {
+        max-width: 100%;
+        width: 100%;
+        display: block;
+    }
+
+    .box-row--m > div {
+        width: 100%;
+    }
+
+    /* --- */
+    .box-100--m {
+        width: 100%;
+    }
+
+    .box-80--m {
+        width: 80%;
+        flex: 1 1 auto;
+    }
+
+    .box-70--m {
+        width: 70%;
+        flex: 1 1 auto;
+    }
+
+    .box-60--m {
+        width: 60%;
+        flex: 1 1 auto;
+    }
+
+    .box-50--m {
+        width: 50%;
+        flex: 1 1 auto;
+    }
+
+    .box-40--m {
+        width: 40%;
+        flex: 1 1 auto;
+    }
+
+    .box-30--m {
+        width: 30%;
+        flex: 1 1 auto;
+    }
+
+    .box-25--m {
+        width: 25%;
+        flex: 1 1 auto;
+    }
+
+    .box-20--m {
+        width: 20%;
+        flex: 1 1 auto;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    /* and (min-width: 480px) */
+    /* hide elements */
+    .hide--l,
+    .hide--m,
+    .hide--s {
+        display: none;
+    }
+
+    /* --- */
+    /* rows */
+    .box-row--m {
+        max-width: 100%;
+        width: 100%;
+        display: block;
+    }
+
+    .box-row--m > div {
+        width: 100%;
+    }
+
+    .box-row--s {
+        max-width: 100%;
+        width: 100%;
+        display: block;
+    }
+
+    .box-row--s > div {
+        width: 100%;
+    }
+
+    /* --- */
+    .box-100--s {
+        min-width: initial;
+        width: initial;
+    }
+
+    .box-80--s {
+        width: 80%;
+    }
+
+    .box-70--s {
+        width: 70%;
+    }
+
+    .box-60--s {
+        width: 60%;
+    }
+
+    .box-50--s {
+        width: 50%;
+    }
+
+    .box-40--s {
+        width: 40%;
+    }
+
+    .box-30--s {
+        width: 30%;
+    }
+
+    .box-25--s {
+        width: 25%;
+        flex: 1 1 auto;
+    }
+
+    .box-20--s {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 539px) {
+
+    /* hide elements */
+    .hide--l,
+    .hide--m,
+    .hide--s {
+        display: none;
+    }
+
+    /* --- */
+    .box-100,
+    .box-80,
+    .box-70,
+    .box-60,
+    .box-40,
+    .box-30,
+    .box-25,
+    .box-20,
+    .box-100--l,
+    .box-80--l,
+    .box-70--l,
+    .box-60--l,
+    .box-50--l,
+    .box-40--l,
+    .box-30--l,
+    .box-25--l,
+    .box-20--l,
+    .box-100--m,
+    .box-80--m,
+    .box-70--m,
+    .box-60--m,
+    .box-50--m,
+    .box-40--m,
+    .box-30--m,
+    .box-25--m,
+    .box-20--m,
+    .box-100--s,
+    .box-80--s,
+    .box-70--s,
+    .box-60--s,
+    .box-50--s,
+    .box-40--s,
+    .box-30--s,
+    .box-25--s,
+    .box-20--s {
+        min-width: initial;
+        width: initial;
+    }
+
+    .box-container,
+    .box-row-full,
+    .box-row--m,
+    .box-row--s,
+    .box-row {
+        display: block;
+        width: 100%;
+    }
+
+
+}
+
+/* +++ End Columns +++ */
+
+
+/* +++ End RESPONSIVE +++ */
