@@ -3,7 +3,7 @@
 <br>
 A light front-end CSS framework for creating mobile-first responsive layouts with a basic utility classes. 
 <br>
-Free and open-source CSS
+Free and open-source CSS.
 
 
 -------------------------------------------------------
