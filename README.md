@@ -1,8 +1,8 @@
 # boxtrucy
 
-A light front-end framework for creating mobile-first responsive layouts with a basic utility classes. 
-
-flexbox-utils
+<br>
+A light front-end CSS framework for creating mobile-first responsive layouts with a basic utility classes. 
+<br>
 Free and open-source CSS
 
 
@@ -13,6 +13,7 @@ Folder __html__ holds example layouts to see few application cases and how frame
 
 -------------------------------------------------------
 Features:
+
 - Rows and cols
 - Persentage based layout
 - Margin and paddings
